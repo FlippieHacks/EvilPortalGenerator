@@ -42,7 +42,7 @@ I am also planning on **having the app available in next languages**:
 - Dutch
 - Spanish
 - German
-- 
+  
 In order to make generating portals in these languages easier. I chose those because they are the ones I speak next to English.
 For **now it's English only**. I am open for **suggestions or translations to other languages**.
 

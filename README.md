@@ -13,9 +13,13 @@ You need GitBash and Powershell for this one. Sorry Linux or Mac users...
 ### How to use
 *!! You have the ability to have a **logo of your choice** on the portal you generate. **This logo has to be an SVG**. You can easily download any logo in PNG, JPG, ... format and **convert** it with a tool [like this one](https://image.online-convert.com/convert-to-svg). Bear in mind that you are **limited to 20 ko for the total final HTML to be able to be broadcasted as portal by your Flipper**. I particularly like the SVG converter I linked because it outputs very small SVG files, although only black and white. I then **change its color manually in the code and adapt its size to the portal's needs**. I am aware that this is not ideal for multicolor logos but it is a **work in progress!***
 1. **Download** the code and **extract** it
+
+   
 2. In the **main folder**, you need to **change the content of two files**: *config.txt* and *svg.txt*
+
 3. The *svg.txt* file is, simply, your SVG, thus the logo you want to use. **Copy and paste** your logo's code in there, starting with <svg> and ending with </svg> (just stating the obvious). Don't forget this is where you **color** your logo, if you need it colored. That is also where you can **resize** it.
-4. The *config.txt is where the magic happens*. You have to assign a **value for each variable, variables being text or colors in this one.**
+
+4.The *config.txt is where the magic happens*. You have to assign a **value for each variable, variables being text or colors in this one.**
 You may **refer to the screenshot down here** to have a better idea of what each variable does.
 ![VariablesPortalGenerator](https://zupimages.net/up/23/32/vx19.png)
 
@@ -24,8 +28,10 @@ You may **refer to the screenshot down here** to have a better idea of what each
 ![Good and bad example](https://zupimages.net/up/23/32/87r8.png)
 Just keep the layout as it is in the original file and everyone will be happy.
 You can **chose** to have the "Forgot credentials" part by **writing true, or false** if you do not want it, in the corresponding field.
-6. Once you tweaked the settings as desired, **save** the *config.txt* and the *svg.txt* file to the same folder they were in already. (so **don't copy them or whatever, just save**)
-7. In the application folder, **double click the *EvilPortalGenerator shortcut*** and watch the magic happen. If everything goes right, your index.html file will be **generated and opened**. You will find it in the same folder as the rest of the application.
+
+5. Once you tweaked the settings as desired, **save** the *config.txt* and the *svg.txt* file to the same folder they were in already. (so **don't copy them or whatever, just save**)
+   
+6. In the application folder, **double click the *EvilPortalGenerator shortcut*** and watch the magic happen. If everything goes right, your index.html file will be **generated and opened**. You will find it in the same folder as the rest of the application.
 Don't forget to **move** your freshly generated portal out of there if you want to keep it. Generating another one will **delete** the *index.html* file in the application folder if there is already one present!
 
 # Don't be shy and share your portals by making a Pull Request to [my repo of various portals](https://github.com/FlippieHacks/FlipperZeroEuropeanPortals/tree/main).

@@ -17,7 +17,7 @@ You need GitBash and Powershell for this one. Sorry Linux or Mac users...
    
 2. In the **main folder**, you need to **change the content of two files**: *config.txt* and *svg.txt*
 
-3. The *svg.txt* file is, simply, your SVG, thus the logo you want to use. **Copy and paste** your logo's code in there, starting with <svg> and ending with </svg> (just stating the obvious). Don't forget this is where you **color** your logo, if you need it colored. That is also where you can **resize** it.
+3. The *svg.txt* file is, simply, your SVG, thus the logo you want to use. **Copy and paste** your logo's code in there, starting with "<svg>" and ending with "</svg>" (just stating the obvious). Don't forget this is where you **color** your logo, if you need it colored. That is also where you can **resize** it.
 
 4.The *config.txt is where the magic happens*. You have to assign a **value for each variable, variables being text or colors in this one.**
 You may **refer to the screenshot down here** to have a better idea of what each variable does.

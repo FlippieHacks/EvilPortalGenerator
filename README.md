@@ -14,9 +14,9 @@ You need GitBash and Powershell for this one. Sorry Linux or Mac users...
 *!! You have the ability to have a **logo of your choice** on the portal you generate. **This logo has to be an SVG**. You can easily download any logo in PNG, JPG, ... format and **convert** it with a tool [like this one](https://image.online-convert.com/convert-to-svg). Bear in mind that you are **limited to 20 ko for the total final HTML to be able to be broadcasted as portal by your Flipper**. I particularly like the SVG converter I linked because it outputs very small SVG files, although only black and white. I then **change its color manually in the code and adapt its size to the portal's needs**. I am aware that this is not ideal for multicolor logos but it is a **work in progress!***
 1. **Download** the code and **extract** it
 2. In the **main folder**, you need to **change the content of two files**: *config.txt* and *svg.txt*
-3. The *svg.txt* file is, simply, your SVG, thus the logo you want to use. **Copy and paste your logo's code in there**, starting with <svg> and ending with </svg> (just stating the obvious). **Don't forget this is where you color your logo, if you need it colored. That is also where you can resize it.**
+3. The *svg.txt* file is, simply, your SVG, thus the logo you want to use. **Copy and paste** your logo's code in there, starting with <svg> and ending with </svg> (just stating the obvious). Don't forget this is where you **color** your logo, if you need it colored. That is also where you can **resize** it.
 4. The *config.txt is where the magic happens*. You have to assign a **value for each variable, variables being text or colors in this one.**
-You may **refer to the screenshot down here to have a better idea of what each variable does.**
+You may **refer to the screenshot down here** to have a better idea of what each variable does.
 ![VariablesPortalGenerator](https://zupimages.net/up/23/32/vx19.png)
 
 **Don't touch the variable's names and what is situated LEFT of the two dots on each line. That would toast the script. Also, keep in mind that you should *not* leave a space between the text you write and the two dots on its left. See screenshot down here for good practice.**

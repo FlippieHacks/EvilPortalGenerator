@@ -27,7 +27,7 @@ You may **refer to the screenshot down here** to have a better idea of what each
 
 ![Good and bad example](https://zupimages.net/up/23/32/87r8.png)
 Just keep the layout as it is in the original file and everyone will be happy.
-You can **chose** to have the "Forgot credentials" part by **writing true, or false** if you do not want it, in the corresponding field.
+You can **chose** to have the "Forgot credentials" part by **writing true, or false** if you do not want it, in the corresponding field. (line 12 of above screenshot)
 
 5. Once you tweaked the settings as desired, **save** the *config.txt* and the *svg.txt* file to the same folder they were in already. (so **don't copy them or whatever, just save**)
    

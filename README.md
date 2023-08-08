@@ -6,6 +6,8 @@ This application helps you **generate a hotspot portal** to be used in the [Evil
 # DISCLAIMER: This is for educational purposes only. Not to be used on unaware victims. You could be arrested for it, that's a crime.
 
 ## Don't feel like making one yourself? You might find what you are looking for on [my repo of various portals](https://github.com/FlippieHacks/FlipperZeroEuropeanPortals/tree/main).
+## Or start extracting the log-in data much faster with [these scripts](https://github.com/FlippieHacks/EvilPortalLogsExtractor) 
+
 
 ### Before you use
 You need GitBash and Powershell for this one. Sorry Linux or Mac users...

@@ -3,14 +3,14 @@
 Tired of manually creating portals to impress your friends and educate people?
 This application helps you **generate a hotspot portal** to be used in the [Evil Portal](https://github.com/bigbrodude6119/flipper-zero-evil-portal) app on the Flipper Zero.
 
-# DISCLAIMER: This is for educational purposes only. Not to be used on unaware victims. You could be arrested for it, that's a crime.
+`DISCLAIMER: This is for educational purposes only. Extracting passwords from unaware victims is illegal`
 
-## Don't feel like making one yourself? You might find what you are looking for on [my repo of various portals](https://github.com/FlippieHacks/FlipperZeroEuropeanPortals/tree/main).
-## Or start extracting the log-in data much faster with [these scripts](https://github.com/FlippieHacks/EvilPortalLogsExtractor) 
+> Don't feel like making one yourself? You might find what you are looking for on [my repo of various portals](https://github.com/FlippieHacks/FlipperZeroEuropeanPortals/tree/main).
+> Or start extracting the log-in data much faster with [these scripts](https://github.com/FlippieHacks/EvilPortalLogsExtractor) 
 
 
-### Before you use
-You need GitBash and Powershell for this one. Sorry Linux or Mac users...
+### Requirements
+You need any bash terminal or Powershell with WSL2 installed
 
 ### How to use
 *!! You have the ability to have a **logo of your choice** on the portal you generate. **This logo has to be an SVG**. You can easily download any logo in PNG, JPG, ... format and **convert** it with a tool [like this one](https://image.online-convert.com/convert-to-svg). Bear in mind that you are **limited to 20 ko for the total final HTML to be able to be broadcasted as portal by your Flipper**. I particularly like the SVG converter I linked because it outputs very small SVG files, although only black and white. I then **change its color manually in the code and adapt its size to the portal's needs**. I am aware that this is not ideal for multicolor logos but it is a **work in progress!***

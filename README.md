@@ -3,47 +3,71 @@
 Tired of manually creating portals to impress your friends and educate people?
 This application helps you **generate a hotspot portal** to be used in the [Evil Portal](https://github.com/bigbrodude6119/flipper-zero-evil-portal) app on the Flipper Zero.
 
+Don't feel like making one yourself? You might find what you are looking for on [my repo of various portals](https://github.com/FlippieHacks/FlipperZeroEuropeanPortals/tree/main).
+If you manage to generate a portal for wider use, don't be shy to make a pull request to this repository with the generated html.
+
+Or start extracting the log-in data much faster with [these scripts](https://github.com/FlippieHacks/EvilPortalLogsExtractor) 
+
 `DISCLAIMER: This is for educational purposes only. Extracting passwords from unaware victims is illegal`
-
-> Don't feel like making one yourself? You might find what you are looking for on [my repo of various portals](https://github.com/FlippieHacks/FlipperZeroEuropeanPortals/tree/main).
-> Or start extracting the log-in data much faster with [these scripts](https://github.com/FlippieHacks/EvilPortalLogsExtractor) 
-
 
 ### Requirements
 You need any bash terminal or Powershell with WSL2 installed
 
 ### How to use
-*!! You have the ability to have a **logo of your choice** on the portal you generate. **This logo has to be an SVG**. You can easily download any logo in PNG, JPG, ... format and **convert** it with a tool [like this one](https://image.online-convert.com/convert-to-svg). Bear in mind that you are **limited to 20 ko for the total final HTML to be able to be broadcasted as portal by your Flipper**. I particularly like the SVG converter I linked because it outputs very small SVG files, although only black and white. I then **change its color manually in the code and adapt its size to the portal's needs**. I am aware that this is not ideal for multicolor logos but it is a **work in progress!***
-1. **Download** the code and **extract** it
 
-   
-2. In the **main folder**, you need to **change the content of two files**: *config.txt* and *svg.txt*
+1. Clone the project
+2. Modify and save the svg.txt and the config.txt files
+3. Run the generate.sh script in the src folder
+4. An index.html & indexWithForgotPassword.html is generated and ready for use on EvilPortal
 
-3. The *svg.txt* file is, simply, your SVG, thus the logo you want to use. **Copy and paste** your logo's code in there. Don't forget this is where you **color** your logo, if you need it colored. That is also where you can **resize** it.
+#### svg.txt
 
-4.The *config.txt is where the magic happens*. You have to assign a **value for each variable, variables being text or colors in this one.**
-You may **refer to the screenshot down here** to have a better idea of what each variable does.
-![VariablesPortalGenerator](https://zupimages.net/up/23/32/vx19.png)
+This text file contains the html code of the svg tag which will be used to display a logo on the generated html page.
+Paste your custom logo in the form of an svg tag in this file, when we generate an html page the svg will be included.
 
-**Don't touch the variable's names and what is situated LEFT of the two dots on each line. That would toast the script. Also, keep in mind that you should *not* leave a space between the text you write and the two dots on its left. See screenshot down here for good practice.**
+You can download any logo in PNG, JPG etc. and convert it to an svg with an svg converter.
+We use a tool [like this one](https://image.online-convert.com/convert-to-svg)
+
+Modifying the color and size of the logo can be done in the svg tag in the svg.txt file
+
+```
+You are limited to 20 kb for the HTML-file to be able to be broadcasted as a portal by EvilPortal on your Flipper, 
+if the file is too large after you generate it, you should consider using a smaller size svg
+```
+
+#### config.txt
+
+The config.txt file contains the titles, text and color you want your fake portal to have. The values are everything after the colon ':', the position of the colon in the file cannot be changed (the whitespaces before the colon are also counted) and spaces after the colon will be taken into account. So we leave no white space between the colon and the value.
+
+The screenshot of our example html shows what the variables in the config.txt correspond to on the html file.
+```
+background_color             :#FFFFFF
+company_title_text           :Evil Portal Generator
+company_title_color          :black
+container_background_color   :#FFFFFF
+container_title_text         :Sign in to fake Github
+container_title_color        :#000000
+container_subtitle_text      :Use your account
+container_subtitle_color     :#000000
+submit_btn_background_color  :#000000
+submit_btn_text              :SEND CREDENTIALS
+submit_btn_text_color        :white
+forgot_credentials_text      :Forgot password?
+forgot_credentials_color     :black
+```
+
+![VariablesPortalGenerator](https://zupimages.net/up/23/45/dq6c.png)
+
+Just keep the layout of the original config.txt and replace the values. This way no extra whitespaces are added an the shell script can read out the values of the config.txt file properly. This screenshots shows what we mean (the forgot_credentials variable has been removed in the latest version).
 
 ![Good and bad example](https://zupimages.net/up/23/32/87r8.png)
-Just keep the layout as it is in the original file and everyone will be happy.
-You can **chose** to have the "Forgot credentials" part by **writing true, or false** if you do not want it, in the corresponding field. (line 12 of above screenshot)
 
-5. Once you tweaked the settings as desired, **save** the *config.txt* and the *svg.txt* file to the same folder they were in already. (so **don't copy them or whatever, just save**)
-   
-6. In the application folder, **double click the *EvilPortalGenerator shortcut*** and watch the magic happen. If everything goes right, your index.html file will be **generated and opened**. You will find it in the same folder as the rest of the application.
-Don't forget to **move** your freshly generated portal out of there if you want to keep it. Generating another one will **delete** the *index.html* file in the application folder if there is already one present!
-
-# Don't be shy and share your portals by making a Pull Request to [my repo of various portals](https://github.com/FlippieHacks/FlipperZeroEuropeanPortals/tree/main).
-
-## What if my file is just too big?
+### What if my file is just too big?
 You are limited to an index.html file of **MAX 20 ko** on Evil Portal. It's just the way it is. Otherwise, the portal will just **not start** and crash your Flipper.
 As I said earlier, limit the colors of the SVG to stay between these limits.
 Also nice to have a look at [RocketGod's HTML squasher](https://github.com/RocketGod-git/evilportal-htmlsquash) which is made for this. Thumbs up to him!
 
-# What to expect from this app in the future
+### What to expect from this app in the future
 I will be **updating** this app to make it **more user-friendly**. **Contributions are more then welcome,** of course. 
 I am also planning on **having the app available in next languages**:
 - French
